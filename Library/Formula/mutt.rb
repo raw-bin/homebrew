@@ -60,7 +60,7 @@ class Mutt < Formula
       args << "--disable-debug"
     end
 
-    system "./configure", *args
+    system "./prepare", *args
     system "make install"
   end
 end
